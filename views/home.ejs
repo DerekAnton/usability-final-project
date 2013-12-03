@@ -8,24 +8,18 @@
     <meta name="author" content="">
 
     <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
-    
+    <%- include scripts.ejs %>
   </head>
 
   <body>
-    <%- include top-bar.ejs %>    
+    <%- include top-bar-login.ejs %>    
 
 </br>
 </br>
 <div class="row-fluid">
   <img id="#logo" src="http://i.imgur.com/DDv137y.jpg" ></img>
 </div>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
 
 <div class="row-fluid">
   <input type="text" class="search-query span8 offset2" placeholder="Enter the name of your class">
@@ -33,7 +27,7 @@
   <div class="offset1"></div>
   <btn></btn>
 
-
+<%- include modal-window-register.ejs %>
 
   </body>
 </html>
