@@ -19,21 +19,18 @@
      </div>
      <div class="form-group span6">
        <label for="exampleInputEmail1">Username</label>
-        <input name="email" type="email" class="form-control" id="grav-email" placeholder="Enter gravatar email">
+        <input id="user-reg"name="email" type="email" class="form-control" id="grav-email" placeholder="Enter gravatar email">
      </div>
      <div class="form-group span6">
        <label for="exampleInputEmail1">Password</label>
         <input name="email" type="email" class="form-control" id="grav-email" placeholder="Enter gravatar email">
      </div>
-     
+
      <div class="form-group">
        <label for="exampleInputPassword1">Password</label>
         <input name="pass1" type="password" class="form-control" id="password1" placeholder="Password">
      </div>
-      <div class="form-group">
-       <label for="exampleInputPassword1">Re-enter Password</label>
-        <input type="password" class="form-control" id="password2" placeholder="Password">
-     </div>
+</div>
   <!-- Modal Footer-->
     <div class="modal-footer">
       <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">cancel</button>
@@ -41,10 +38,15 @@
     </div> 
   </form>
 </div>
-<script>
+<script type="text/javascript">
 
 $(function()
 {
   $("#submit-btn").on("click", function()
-  {});
+  {
+    $("#register-btn").hide();
+    $("#login-btn").hide();
+    $("#divider").append("<li id=\"register-btn\"><a href=\"#modal-register\" data-toggle=\"modal\">Welcome "+ $("#user-reg").val() +"</a></li>");
+  });
+});
 </script>
