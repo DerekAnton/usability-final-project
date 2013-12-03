@@ -32,9 +32,8 @@
       {
         $("#go-btn").on("click", function()
         {
-          $("body").append("<a id=\"hidden-btn\" href=\"/" + $("#search-area").val() + "\">hidden-btn</a>");
-          $("#hidden-btn").hide();
-          $("#hidden-btn").trigger('click');
+          window.location.href = "http://127.0.0.1:3000/"+ $("#search-area").val();
+          return false;
         });
       });
     </script>
