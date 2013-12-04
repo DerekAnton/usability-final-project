@@ -35,6 +35,8 @@ app.get('/umass', routes.umass);
 app.get('/325', routes.threetwentyfive);
 app.get('/exam1', routes.exam1);
 app.get('/exam1_details', routes.exam1_details);
+app.get('/eva', routes.eva);
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

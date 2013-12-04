@@ -31,3 +31,7 @@ exports.exam1_details = function(req, res)
 {
 	res.render('exam1-details-page.ejs', {title: 'Details'});
 };
+exports.eva = function(req, res)
+{
+	res.render('eva.ejs', {title: 'Professor'});
+};
