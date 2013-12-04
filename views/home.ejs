@@ -11,14 +11,23 @@
   </head>
 
   <body>
-    <%- include top-bar.ejs %>    
+    <%- include top-bar-login.ejs %>    
 
-</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br></br></br></br></br>
+<div class="span7"></div>
+<div class="span4">  <img id="#logo" src="http://i.imgur.com/DDv137y.jpg" ></img></div>
+<div class="span1"></div>
+</br></br></br></br></br></br>
+
 
 <div class="row-fluid">
   <input id="search-area" type="text" class="search-query span8 offset2" placeholder="Enter the name of your class">
       <btn id="go-btn" class="btn" href="#edit-profile" role="button" data-toggle="modal">Go</btn><br>
   <div class="offset1"></div>
+
+    <%- include modal-window-register.ejs %>
+
+  </body>
 
 
     <script type="text/javascript">
@@ -31,8 +40,4 @@
         });
       });
     </script>
-
-    <%- include modal-window-register.ejs %>
-
-  </body>
 </html>
