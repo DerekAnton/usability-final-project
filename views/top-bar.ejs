@@ -1,4 +1,6 @@
 
+<%- include scripts.ejs %>
+
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <ul class="nav">
@@ -19,9 +21,20 @@
 </br></br>
 <div class="row-fluid">
   <img id="#logo" src="http://i.imgur.com/DDv137y.jpg" ></img>
-      <btn id="go-btn" class="btn pull-right" href="#edit-profile" role="button" data-toggle="modal">Go</btn>
-    <input id="search-area" type="text" class="search-query pull-right" placeholder="Search">
+  <btn id="go-btn" class="btn pull-right" href="#edit-profile" role="button" data-toggle="modal">Go</btn>
+  <input id="search-area" type="text" class="search-query pull-right" placeholder="Search">
 </div>
 </br></br>
 
+
+    <script type="text/javascript">
+      $(function()
+      {
+        $("#go-btn").on("click", function()
+        {
+          window.location.href = "http://127.0.0.1:3000/"+ $("#search-area").val();
+          return false;
+        });
+      });
+      </script>
 
