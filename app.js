@@ -32,7 +32,6 @@ app.get('/home', routes.home);
 app.get('/login', routes.login);
 app.get('/profile', routes.profile);
 app.get('/umass', routes.umass);
-app.get('/cs', routes.cs);
 app.get('/325', routes.threetwentyfive);
 app.get('/exam1', routes.exam1);
 app.get('/exam1_details', routes.exam1_details);

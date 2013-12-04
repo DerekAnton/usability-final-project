@@ -19,10 +19,6 @@ exports.umass = function(req, res)
 {
 	res.render('umass-page.ejs', {title: 'Umass'});
 };
-exports.cs = function(req, res)
-{
-	res.render('cs-page.ejs', {title: 'Computer Science'});
-};
 exports.threetwentyfive = function(req, res)
 {
 	res.render('325-page.ejs', {title: 'CS 325'});
