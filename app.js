@@ -34,7 +34,7 @@ app.get('/umass%20amherst', routes.umass);
 app.get('/cs325', routes.threetwentyfive);
 app.get('/exam%201', routes.exam1);
 app.get('/exam%201%20details', routes.exam1_details);
-app.get('/professor%20hudlicka', routes.eva);
+app.get('/eva%20hudlicka', routes.eva);
 
 
 http.createServer(app).listen(app.get('port'), function(){
