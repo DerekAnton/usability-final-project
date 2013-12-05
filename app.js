@@ -29,13 +29,12 @@ if ('development' == app.get('env')) {
 
 app.get('/', routes.home);
 app.get('/home', routes.home);
-app.get('/login', routes.login);
 app.get('/profile', routes.profile);
-app.get('/umass', routes.umass);
-app.get('/325', routes.threetwentyfive);
-app.get('/exam1', routes.exam1);
-app.get('/exam1_details', routes.exam1_details);
-app.get('/eva', routes.eva);
+app.get('/umass%20amherst', routes.umass);
+app.get('/cs325', routes.threetwentyfive);
+app.get('/exam%201', routes.exam1);
+app.get('/exam%201%20details', routes.exam1_details);
+app.get('/professor%20hudlicka', routes.eva);
 
 
 http.createServer(app).listen(app.get('port'), function(){

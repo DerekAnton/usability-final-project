@@ -7,10 +7,6 @@ exports.home = function(req, res)
 {
 	res.render('home.ejs', {title: "Welcome to WorkSmart!"});
 };
-exports.login = function(req, res)
-{
-	res.render('login.ejs', {title: 'Login'});
-};
 exports.profile = function(req, res)
 {
 	res.render('profile.ejs', {title: 'User\s Profile'});
