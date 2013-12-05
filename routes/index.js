@@ -25,7 +25,7 @@ exports.exam1 = function(req, res)
 };
 exports.exam1_details = function(req, res)
 {
-	res.render('exam1-details-page.ejs', {title: 'Details'});
+	res.render('exam1-details.ejs', {title: 'Details'});
 };
 exports.eva = function(req, res)
 {
