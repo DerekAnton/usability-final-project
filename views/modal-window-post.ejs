@@ -1,0 +1,73 @@
+<div id="modal-register" class="modal hide fade" aria-labelledby="modalLabel" aria-hidden="true">
+ 
+  <!-- Modal header-->
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></button>
+      <h3 id="modalLabel">Submit a Post</h3>
+  </div>
+  <!-- Modal Body-->
+  <div class="modal-body">
+    <form id="update-form" role="form" action="/editprofile" method="post">
+     
+     <div class="form-group span6">
+       <label for="exampleInputEmail1">Title your post</label>
+        <input name="email" type="email" class="form-control" id="post-title" placeholder="Title">
+     </div>
+      <div class="form-group span6">
+       <label for="exampleInputEmail1">Enter your Username</label>
+        <input name="email" type="email" class="form-control" id="username" placeholder="Username">
+     </div>
+     <div class="form-group span6">
+       <label for="exampleInputEmail1">Provide your overall rating of class</label>
+        
+
+          <div class="btn-group">
+            <div class="btn btn-small" id="rating">Rating</div>
+            <div id="dropdown-toggle" class="btn btn-small dropdown-toggle" data-toggle="dropdown">
+              <span class="caret"></span>
+            </div>
+            <ul class="dropdown-menu">
+              </li> <a id="1" href="#1">1</a></li>
+              </li> <a id="2" href="#2">2</a></li>
+              </li> <a id="3" href="#3">3</a></li>
+              </li> <a id="4" href="#4">4</a></li>
+              </li> <a id="5" href="#5">5</a></li>
+            </ul>
+          </div>
+
+
+
+     </div>
+     <div class="form-group span6">
+       <label for="exampleInputEmail1">Hours spent studying</label>
+        <input name="email" type="email" class="form-control" id="studying-length" placeholder="Hours spent">
+     </div>
+    
+    <div class="form-group span12">
+       <label for="exampleInputEmail1">Additonal Notes</label>
+        <input name="email" type="email" class="form-control" id="studying-length" placeholder="Notes">
+     </div>
+
+</div>
+  <!-- Modal Footer-->
+    <div class="modal-footer">
+      <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">cancel</button>
+      <button type="submit" id="submit-btn" class="btn btn-success" data-dismiss="modal" aria-hidden="true">submit</button>
+    </div> 
+  </form>
+</div>
+<script type="text/javascript">
+
+$(function()
+{
+  $('#dropdown-toggle').dropdown();
+
+  $("#1").on("click", function(){$("#rating").replaceWith("<div class=\"btn btn-small\" id=\"rating\" value=\"1\">1</div>");});
+  $("#2").on("click", function(){$("#rating").replaceWith("<div class=\"btn btn-small\" id=\"rating\" value=\"2\">2</div>");});
+  $("#3").on("click", function(){$("#rating").replaceWith("<div class=\"btn btn-small\" id=\"rating\" value=\"3\">3</div>");});
+  $("#4").on("click", function(){$("#rating").replaceWith("<div class=\"btn btn-small\" id=\"rating\" value=\"4\">4</div>");});
+  $("#5").on("click", function(){$("#rating").replaceWith("<div class=\"btn btn-small\" id=\"rating\" value=\"5\">5</div>");});
+
+  $("#submit-btn").on("click", function(){$("#insert-here").append("<tr><td>" + $("#post-title").val() +"</td><td>" + document.getElementById('rating').getAttribute('value') +"</td><td>" + $("#username").val() +"</td><td>" + $("#studying-length").val() +"</td></tr>");});
+});
+</script>

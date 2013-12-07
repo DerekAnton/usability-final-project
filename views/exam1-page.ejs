@@ -13,6 +13,8 @@
 
   <body>
   <%- include top-bar.ejs %>
+  <%- include modal-window-post.ejs %>
+
   <div class="span5">
   <ol class="breadcrumb">
     <li><a href="/home">Home ></a></li>
@@ -23,21 +25,21 @@
   </ol>
   </div>
 
-
 <div class="fluid-row">
-
     <div class="page-header span8">
     <h1><small>Posts</small></h1>
     </div>
+
 <div class="span2"></div>
 <div id="content" class="span4">
-    <table cellspacing="0">
-    <tr><th>Username</th><th>Replies</th></tr>
-    <tr><td><a href="">srojee</a></td><td>5</td></tr>
-    <tr><td>rjconnell</td><td>2</td></tr>
-    <tr><td>stove</td><td>3</td></tr>
+    <table id="insert-here" cellspacing="0">
+    <tr><th>Title</th><th>Class Rating</th><th>Username</th><th>Hours Studying</th></tr>
+    <tr><td><a href="/exam%201%20details">Easy test!</a></td><td>4</td><td>srojee</td><td>2</td></tr>
+    <tr><td>Difficult</td><td>1</td><td>rjconnell</td><td>4</td></tr>
+    <tr><td>Average</td><td>3</td><td>stove</td><td>3</td></tr>
     </table>
 </div>
+  <div class="btn" href="#modal-register" data-toggle="modal">Submit a Post</div>  
 </div>
 
   </body>
