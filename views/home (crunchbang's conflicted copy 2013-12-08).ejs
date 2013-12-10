@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="/stylesheets/bootstrap-responsive.min.css" rel="stylesheet">
+    <%- include scripts.ejs %>
+  </head>
+
+  <body>
+    <%- include top-bar-login.ejs %>    
+
+<div id="append" class="pull-right"></div>
+
+</br></br></br></br></br></br></br></br></br>
+<div class="span5"></div>
+<div class="span3">  <img id="#logo" src="http://i.imgur.com/DDv137y.jpg" ></img></div>
+<div class="span4"></div>
+</br></br></br></br></br></br>
+
+
+<div class="row-fluid">
+  <div class="span4"></div>
+  <input id="search-area" type="text" class="search-query span4" placeholder="Enter your search terms">
+      <btn id="go-btn" class="btn" href="#edit-profile" role="button" data-toggle="modal">Go</btn><br>
+  <div class="span4"></div>
+    <%- include modal-window-register.ejs %>
+
+  </body>
+    <script type="text/javascript">
+      $(function()
+      {
+        $("#go-btn").on("click", function()
+        {
+          window.location.href = "http://127.0.0.1:3000/"+ $("#search-area").val();
+          return false;
+        });
+      });
+    </script>
+</html>
