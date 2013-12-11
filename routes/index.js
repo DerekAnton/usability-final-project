@@ -31,3 +31,7 @@ exports.eva = function(req, res)
 {
 	res.render('eva.ejs', {title: 'Professor'});
 };
+exports.favorites = function(req, res)
+{
+	res.render('favorites.ejs', {title: 'favorites'});
+};

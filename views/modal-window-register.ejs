@@ -47,7 +47,10 @@ $(function()
     $("#register-btn").hide();
     $("#login-btn").hide();
     $("#append").append("<a>Welcome "+ $("#user-reg").val() +"</a>");
+
     $("#divider").append("<li>Logout</li>");
+    
+    $("#divider").replaceWith('<li id="favorite-btn"><a href="/favorites" >Favorites</a></li>');
   });
 });
 </script>

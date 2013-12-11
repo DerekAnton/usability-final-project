@@ -35,6 +35,7 @@ app.get('/cs325', routes.threetwentyfive);
 app.get('/exam%201', routes.exam1);
 app.get('/exam%201%20details', routes.exam1_details);
 app.get('/eva%20hudlicka', routes.eva);
+app.get('/favorites', routes.favorites);
 
 
 http.createServer(app).listen(app.get('port'), function(){
